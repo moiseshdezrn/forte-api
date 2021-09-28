@@ -1,18 +1,24 @@
 
-## Usage
+## Como Usar
 
+
+## Instalar paquetes (entity framework)
+``` Install Packages
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
+```
+## Ejecutar las migraciones
 
-``` Install Packages
+``` Run Migration
+(Solo es necesario si existen migraciones en la carpeta 'Migrations')
+Add-Migration API.Models.PermisoContext 
 
-Run Migration
-Add-Migration API.Models.PermisoContext
-Update Migration
+Este comando creará la BD en la instancia local de SQL server, la cadena de conexión se puede configurar en appsettings.json
+(Por defecto esta configurada como trusted)
+
+
 update-database
-
-
 
 ```
 
-launch at https://localhost:44365/
+Ejecutar en https://localhost:44365/

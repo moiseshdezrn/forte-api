@@ -19,10 +19,6 @@ namespace API.Controllers
             _dataRepository = dataRepository;
         }
 
-        public PermisoController()
-        {
-        }
-
         [Route("all")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
